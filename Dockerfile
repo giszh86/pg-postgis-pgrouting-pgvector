@@ -1,4 +1,4 @@
-FROM postgres:12.22
+FROM nickblah/pgrouting:12.19-postgis-3.4.2-pgrouting-3.6.2
 
 ## Befor `FROM` is previous stage,
 ## after `FROM` is current stage.
@@ -10,7 +10,6 @@ RUN locale-gen
 
 ## Install required packages.
 RUN apt-get update && \
-    apt-get install -y postgresql-${PG_VER}-postgis-3 \
-    postgresql-${PG_VER}-pgvector \
+    apt-get install -y postgresql-${PG_VER}-pgvector \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
