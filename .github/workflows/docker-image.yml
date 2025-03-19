@@ -11,8 +11,8 @@ on:
 # 定义 APP_NAME 用于 docker build-args
 # 定义 DOCKERHUB_REPO 标记 docker hub repo 名称
 env:
-  APP_NAME: pg-postgis-pgvector
-  DOCKERHUB_REPO: giszh86/pg-postgis-pgvector
+  APP_NAME: pg-postgis-pgrouting-pgvector
+  DOCKERHUB_REPO: giszh86/pg-postgis-pgrouting-pgvector
 
 jobs:
   main:
